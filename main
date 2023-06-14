@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+int count;
+
+python
+Copy code
+System.out.print("Enter the number of values: ");
+count = input.nextInt();
+
+int[] nums = new int[count];
+System.out.print("Enter " + count + " values: ");
+for (int i = 0; i < nums.length; i++) {
+  nums[i] = input.nextInt();
+}
+
+int min = nums[0];
+for (int i = 1; i < nums.length; i++) {
+  if (nums[i] < min) {
+    min = nums[i];
+  }
+}
+
+System.out.println("The minimum value is " + min);
+}
+}
